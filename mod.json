@@ -1,0 +1,7 @@
+{
+	"name": "mod-setdefaultstance",
+	"version": "0.0.25",
+	"label": "mod-setdefaultstance",
+	"description": "Set DefaultStance for unit type in tooltip.",
+	"dependencies": ["0ad>=0.0.25"]
+}
