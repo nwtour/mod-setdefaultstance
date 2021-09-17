@@ -1,20 +1,5 @@
 # mod-setdefaultstance
 ```
-simulation/components/UnitAI.js
-@@ -3443,12 +3443,7 @@
- 
- 	this.formationAnimationVariant = undefined;
- 	this.cheeringTime = +(this.template.CheeringTime || 0);
--	this.SetStance(
--		getUserDefinedDefaultStance(
--			Engine.QueryInterface(this.entity, IID_Identity).GetSelectionGroupName(),
--			this.template
--		)
--	);
-+	this.SetStance(this.template.DefaultStance);
- };
- 
- UnitAI.prototype.IsTurret = function()
 gui/reference/viewer/ViewerPage.js
 @@ -32,10 +32,17 @@
  		let templateName = removeFiltersFromTemplateName(data.templateName);
